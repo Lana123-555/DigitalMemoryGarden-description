@@ -1,0 +1,67 @@
+.dropdownWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  padding: 16px 40px;
+  border: 2px solid rgba(15, 26, 44, 1);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background-color: rgba(188, 198, 210, 1);
+  color: rgba(15, 26, 44, 1);
+  height: 72px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.input:focus,
+.input[aria-expanded="true"] {
+  outline: none;
+  border-color: rgba(15, 26, 44, 1);
+}
+
+.input::placeholder {
+  color: rgba(80, 102, 123, 1);
+}
+
+.dropdownList {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background: rgba(188, 198, 210, 1);
+  border: 2px solid rgba(15, 26, 44, 1);
+  border-radius: 32px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdownItem {
+  padding: 12px 40px;
+  font-size: 18px;
+  color: rgba(15, 26, 44, 1);
+  cursor: pointer;
+  border-radius: 32px;
+  transition: background 0.15s;
+}
+
+.dropdownItem[aria-selected="true"],
+.dropdownItem:hover {
+  background: rgba(207, 206, 201, 0.3);
+}
+
+.error {
+  color: rgba(80, 102, 123, 1);
+  font-size: 14px;
+  margin-top: 4px;
+}

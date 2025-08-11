@@ -1,0 +1,120 @@
+/* PhotoItem.module.css */
+.photoItem {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(15, 26, 44, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(188, 198, 210, 1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.photoItem:hover {
+  transform: translateY(-2px);
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  min-height: 200px;
+  max-height: 350px;
+  aspect-ratio: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(26, 44, 67));
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photoItem:hover .overlay {
+  opacity: 1;
+}
+
+.info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.col {
+  width: fit-content;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 1441px) {
+  .title {
+    font-size: 20px;
+  }
+  .author,
+  .category {
+    font-size: 16px;
+  }
+
+  .photo {
+    max-height: 380px;
+  }
+}
+
+/* For ultra-wide screens - limit photo height more */
+@media screen and (min-width: 1920px) {
+  .photo {
+    max-height: 400px;
+  }
+}
+
+.author {
+  font-size: 14px;
+  margin: 0 0 4px 0;
+  opacity: 0.9;
+  text-align: right;
+}
+
+.category {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .photoItem {
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photoItem {
+    border-radius: 12px;
+  }
+
+  .photo {
+    max-height: 300px;
+  }
+
+  .overlay {
+    opacity: 1;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  }
+}

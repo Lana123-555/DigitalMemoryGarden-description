@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.mapImageAbsolute {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.mapContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flowerMarker {
+  position: absolute;
+  transition: box-shadow 0.2s;
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: left, top, width, height;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.flowerMarker:hover {
+  transform: scale(1.05);
+}
+
+.flowerWrapper {
+  position: absolute;
+  z-index: 10;
+}
+
+.popoverWrapper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -110%);
+}

@@ -1,0 +1,192 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  position: absolute;
+  top: 16px;
+  left: 72px;
+  z-index: 2;
+  width: calc(100% - 144px);
+}
+
+.logo {
+  width: 36px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1441px) {
+  .link {
+    font-size: 18px;
+  }
+}
+
+.lightLink {
+  color: rgba(207, 206, 201, 1);
+}
+
+.linkActive {
+  border-bottom: 1px solid rgba(80, 102, 123, 1);
+}
+
+/* Burger styles */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  position: relative;
+  margin-left: 12px;
+}
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: rgba(27, 47, 72, 1);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+.burgerOpen span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+.burgerLight span {
+  background-color: rgba(207, 206, 201, 1);
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  min-width: 250px;
+  height: 100vh;
+  background-image: url("/blue-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 4;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 20px 20px 40px;
+  transition: right 0.35s cubic-bezier(0.4, 2, 0.6, 1);
+  border-left: 7px solid rgba(27, 47, 72, 1);
+}
+.mobileMenuOpen {
+  display: flex;
+  right: 0;
+}
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+}
+.mobileLink {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(207, 206, 201, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.18s;
+  padding: 8px 0;
+}
+.mobileLinkActive {
+  border-bottom: 2px solid rgba(207, 206, 201, 1);
+}
+
+.menuFlower {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  position: relative;
+  top: 5px;
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- ADAPTIVE --- */
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: calc(100% - 80px);
+  }
+  .nav {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 30px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .menuFlower {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menuFlower {
+    margin-top: 24px;
+  }
+}

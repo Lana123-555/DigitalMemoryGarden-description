@@ -1,0 +1,236 @@
+.container {
+  padding: 40px 72px 40px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.sliderWrapper {
+  min-height: 550px;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+}
+.bookBg {
+  background: #d2b887; /* beige */
+  padding: 32px;
+  /* "page" effect: dips in center of top and bottom edges */
+  clip-path: polygon(
+    0% 0%,
+    /* top-left */ 50% 10px,
+    /* top-center dip */ 100% 0%,
+    /* top-right */ 100% 100%,
+    /* bottom-right */ 50% calc(100% - 10px),
+    /* bottom-center dip */ 0% 100% /* bottom-left */
+  );
+  box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  height: 100%;
+  width: calc(100% - 240px);
+  margin: 0 auto;
+  position: relative;
+}
+.bookContent {
+  background: rgba(243, 243, 243, 1);
+  border-radius: 16px;
+  padding: 40px calc(30px + 12px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  height: 100%;
+  position: relative;
+}
+.bookContent::before {
+  width: 12px;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 1);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bookContent::after {
+  width: 12px;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 1);
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pattern {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  width: 25%;
+  max-height: 80%;
+  object-fit: contain;
+  transform: rotate(90deg);
+  z-index: 1;
+  opacity: 0.5;
+}
+.middleLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 17px;
+  height: 100%;
+  background-color: rgba(207, 206, 201, 1);
+}
+.record {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  z-index: 2;
+}
+.recordTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.recordTitle {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+.recordEmpty {
+  width: 100%;
+  max-width: 60%;
+  height: 22px;
+  background: rgba(207, 206, 201, 1);
+}
+.recordText {
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 80px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+
+  border: 2px solid rgba(15, 26, 44, 1);
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.arrowIcon {
+  width: 40px;
+  height: 100%;
+  object-fit: contain;
+}
+.arrowLeft {
+  left: 0;
+}
+.arrowRight {
+  right: 0;
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1441px) {
+  .title {
+    font-size: 40px;
+  }
+  .recordTitle {
+    font-size: 20px;
+  }
+  .recordText {
+    font-size: 17px;
+  }
+}
+
+.title span {
+  font-weight: 500;
+}
+.record {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .bookContent {
+    gap: 40px;
+  }
+  .recordTop {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sliderWrapper {
+    height: auto;
+  }
+  .bookContent {
+    grid-template-columns: 1fr;
+  }
+  .recordTop {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .middleLine {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .arrowBtn {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .sliderWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bookBg {
+    width: 100%;
+    padding: 24px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    order: 1;
+  }
+  .arrowRight {
+    order: 3;
+  }
+  .arrowLeft {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 20px;
+  }
+  .bookContent {
+    padding: 20px;
+  }
+}

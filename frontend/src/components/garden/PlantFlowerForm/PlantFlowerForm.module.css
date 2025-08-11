@@ -1,0 +1,255 @@
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.formWrapper {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+.row .input:last-child {
+  width: 35%;
+}
+.input,
+.mediaBtn {
+  padding: 16px 40px;
+  border: 2px solid rgba(15, 26, 44, 1);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background-color: rgba(188, 198, 210, 1);
+  color: rgba(15, 26, 44, 1);
+  height: 72px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+
+.textarea {
+  padding: 16px 40px;
+  border: 2px solid rgba(15, 26, 44, 1);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background-color: rgba(188, 198, 210, 1);
+  color: rgba(15, 26, 44, 1);
+  min-height: 120px;
+  max-height: 200px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 140%;
+  letter-spacing: -2%;
+  resize: vertical;
+  font-family: inherit;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(80, 102, 123, 1);
+}
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: rgba(15, 26, 44, 1);
+}
+.mediaRow {
+  display: flex;
+  gap: 10px;
+}
+.mediaBtn {
+  color: rgba(80, 102, 123, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mediaBtnAdded {
+  color: rgba(15, 26, 44, 1);
+  background-color: rgba(144, 174, 189, 1);
+}
+.mediaIcon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.checkboxRow {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.checkboxLabel {
+  color: rgba(80, 102, 123, 1);
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  display: flex;
+  align-items: center;
+}
+.checkboxInput {
+  display: none;
+}
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  border: 1px solid rgba(80, 102, 123, 1);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.checkboxInput:checked + .customCheckbox {
+  background-color: rgba(80, 102, 123, 1);
+}
+.error {
+  color: rgba(80, 102, 123, 1);
+  font-size: 14px;
+}
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+}
+.flowerId {
+  padding: 10px 40px;
+  height: 72px;
+  border: 2px solid rgba(80, 102, 123, 1);
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  color: rgba(80, 102, 123, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  display: none;
+}
+
+@media screen and (min-width: 1441px) {
+  .title {
+    font-size: 32px;
+  }
+  .input,
+  .mediaBtn {
+    font-size: 20px;
+    height: 76px;
+  }
+  .textarea {
+    font-size: 20px;
+    min-height: 130px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 400px);
+  }
+  .flowerId {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(60% - 20px);
+  }
+  .input,
+  .mediaBtn {
+    padding: 16px 30px;
+  }
+  .textarea {
+    padding: 16px 30px;
+  }
+  .footerRow {
+    gap: 20px;
+  }
+  .flowerId {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(65% - 20px);
+  }
+  .input,
+  .mediaBtn {
+    padding: 16px 20px;
+  }
+  .textarea {
+    padding: 16px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .title {
+    display: block;
+  }
+  .checkboxRow {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .input,
+  .mediaBtn {
+    font-size: 16px;
+  }
+  .textarea {
+    font-size: 16px;
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .footerRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .input,
+  .mediaBtn {
+    font-size: 15px;
+  }
+  .textarea {
+    font-size: 15px;
+  }
+  .mediaIcon {
+    width: 14px;
+    height: 14px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .input:last-child {
+    width: 100%;
+  }
+  .mediaBtn {
+    padding: 16px 10px;
+  }
+}

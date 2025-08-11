@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 72px;
+  padding-bottom: 40px;
+}
+.title {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.tools {
+  display: flex;
+  justify-content: space-between;
+}
+.tool {
+  width: 400px;
+  height: 480px;
+  padding: 40px;
+  background-color: rgba(27, 47, 72);
+  border-radius: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.toolImageWrapper {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(188, 198, 210, 1);
+  border-radius: 40px;
+  position: relative;
+}
+.toolImage {
+  width: 100%;
+  height: 95%;
+  border-radius: 40px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+.toolButton {
+  width: 72px;
+  height: 72px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50%;
+}
+.toolTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(188, 198, 210, 1);
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+  .tool {
+    width: 330px;
+    height: 420px;
+    border-radius: 70px;
+    padding: 25px;
+  }
+  .toolImageWrapper {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tool {
+    width: 270px;
+    height: 360px;
+    border-radius: 55px;
+  }
+  .toolImageWrapper {
+    width: 100%;
+    height: 250px;
+  }
+  .toolTitle {
+    font-size: 20px;
+  }
+  .toolButton {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 20px 40px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .tools {
+    gap: 25px;
+  }
+  .tool {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    padding-bottom: 25px;
+  }
+  .toolImageWrapper {
+    width: 100%;
+    height: 250px;
+  }
+  .toolTitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 30px;
+  }
+  .tools {
+    gap: 20px;
+  }
+  .tool {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+  }
+  .toolImageWrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+  }
+  .toolTitle {
+    font-size: 17px;
+  }
+  .toolButton {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .tools {
+    gap: 10px;
+  }
+  .tool {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+  }
+  .toolImageWrapper {
+    width: 100%;
+    height: 190px;
+    border-radius: 25px;
+  }
+  .toolTitle {
+    font-size: 16px;
+  }
+  .toolButton {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .title {
+    font-size: 30px;
+  }
+  .tools {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .tool {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    border-radius: 60px;
+    gap: 20px;
+    align-items: center;
+  }
+  .toolTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+  .toolImageWrapper {
+    height: 380px;
+    border-radius: 50px;
+  }
+  .toolButton {
+    width: 72px;
+    height: 72px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .tools {
+    gap: 20px;
+  }
+  .tool {
+    width: 100%;
+    gap: 15px;
+    padding: 30px;
+    align-items: center;
+  }
+  .toolTitle {
+    font-size: 22px;
+    text-align: center;
+  }
+  .toolImageWrapper {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    gap: 30px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .tools {
+    gap: 15px;
+  }
+  .tool {
+    padding: 20px;
+  }
+  .toolTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .toolImageWrapper {
+    height: 280px;
+  }
+  .toolButton {
+    width: 60px;
+    height: 60px;
+  }
+}

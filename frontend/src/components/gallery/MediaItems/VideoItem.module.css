@@ -1,0 +1,205 @@
+/* VideoItem.module.css */
+.videoItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(15, 26, 44, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.videoItem:hover {
+  transform: translateY(-2px);
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  background-color: rgba(188, 198, 210, 1);
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  min-height: 200px;
+  max-height: 350px;
+}
+
+/* Fullscreen video styling - show video completely */
+.video:fullscreen {
+  object-fit: contain !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: none !important;
+  background: black;
+}
+
+.video:-webkit-full-screen {
+  object-fit: contain !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: none !important;
+  background: black;
+}
+
+.video:-moz-full-screen {
+  object-fit: contain !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: none !important;
+  background: black;
+}
+
+.video:-ms-fullscreen {
+  object-fit: contain !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: none !important;
+  background: black;
+}
+
+.playOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.playOverlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.playButton {
+  transition: transform 0.3s ease;
+}
+
+.playOverlay:hover .playButton {
+  transform: scale(1.1);
+}
+
+.info {
+  padding: 16px;
+  background-color: rgba(188, 198, 210, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  color: rgba(15, 26, 44, 1);
+}
+
+@media screen and (min-width: 1441px) {
+  .title {
+    font-size: 18px;
+  }
+  .author {
+    font-size: 16px;
+  }
+
+  .video {
+    max-height: 380px;
+  }
+
+  /* Fullscreen styles for larger screens */
+  .video:fullscreen,
+  .video:-webkit-full-screen,
+  .video:-moz-full-screen,
+  .video:-ms-fullscreen {
+    object-fit: contain !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: none !important;
+    background: black;
+  }
+}
+
+/* For ultra-wide screens - limit video height more */
+@media screen and (min-width: 1920px) {
+  .video {
+    max-height: 400px;
+  }
+
+  /* Fullscreen styles for ultra-wide screens */
+  .video:fullscreen,
+  .video:-webkit-full-screen,
+  .video:-moz-full-screen,
+  .video:-ms-fullscreen {
+    object-fit: contain !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: none !important;
+    background: black;
+  }
+}
+
+.author {
+  font-size: 14px;
+  margin: 0 0 4px 0;
+  color: rgba(80, 102, 123, 1);
+  text-align: right;
+}
+
+.category {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(80, 102, 123, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: right;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .videoItem {
+    width: 100%;
+  }
+
+  /* Fullscreen styles for tablets */
+  .video:fullscreen,
+  .video:-webkit-full-screen,
+  .video:-moz-full-screen,
+  .video:-ms-fullscreen {
+    object-fit: contain !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: none !important;
+    background: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videoItem {
+    width: 100%;
+  }
+
+  .video {
+    max-height: 300px;
+  }
+
+  /* Fullscreen styles for mobile */
+  .video:fullscreen,
+  .video:-webkit-full-screen,
+  .video:-moz-full-screen,
+  .video:-ms-fullscreen {
+    object-fit: contain !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: none !important;
+    background: black;
+  }
+}

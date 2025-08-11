@@ -1,0 +1,315 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "search": "Search",
+    "close": "Close",
+    "next": "Next",
+    "prev": "Previous",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "back": "Back",
+    "continue": "Continue",
+    "yes": "Yes",
+    "no": "No",
+    "required": "Required",
+    "optional": "Optional",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info"
+  },
+  "navigation": {
+    "home": "Home",
+    "garden": "Garden",
+    "candles": "Candles",
+    "archives": "Archives",
+    "gallery": "Gallery",
+    "about": "About",
+    "donate": "Donate"
+  },
+  "home": {
+    "hero": {
+      "title": ["The Digital", "Memory Garden"],
+      "subtitle": "An interactive platform for collective remembrance of the ongoing war in Ukraine (2022–). Through participatory storytelling, the Digital Memory Garden invites you to preserve personal wartime memories – spoken or silent, written, drawn, or recorded. Each contribution becomes part of a living archive of courage, loss, and resilience. Let’s grow this digital garden of memory together – and carry our stories through generations. Your memory matters!",
+      "cta": "Join our digital memory field"
+    },
+    "memoryTools": {
+      "title": "Our Memory Tools",
+      "flower": {
+        "title": "How to plant a flower of memory"
+      },
+      "candle": {
+        "title": "How to light a memorial candle"
+      },
+      "archive": {
+        "title": "How to use the memory archive"
+      }
+    },
+    "map": {
+      "title": "Ukraine will always remember those united by war",
+      "description": "This living map blossoms with digital flowers - each one marking a story, a voice, a memory rooted across Ukraine"
+    },
+    "numbers": {
+      "title": "Statistics",
+      "people": "People joined",
+      "stories": "Stories collected",
+      "places": "Places remembered",
+      "cta": "Join our digital memory field"
+    }
+  },
+  "garden": {
+    "hero": {
+      "title": "Memory garden",
+      "subtitle": "Mark a moment or a feeling. Upload a written story, record a video, or add an image, sound, or drawing – and let it bloom as a digital flower.",
+      "findFlower": "Find some memory flower",
+      "plantFlower": "Plant new memory flower"
+    },
+    "map": {
+      "title": "Ukraine will always remember those united by war",
+      "readAll": "Read all stories",
+      "viewAll": "View all media"
+    },
+    "plantForm": {
+      "title": "New flower",
+      "name": "Name or Callsign",
+      "age": "Age",
+      "location": "Location",
+      "storyTitle": "Title of story",
+      "comment": "Comment or story",
+      "consent": "I consent to the processing of my personal data and public sharing of my submission",
+      "sensitive": "This message may contain sensitive content",
+      "flowerId": "Flower ID",
+      "validation": {
+        "nameMax": "Maximum 100 characters",
+        "ageMin": "Age cannot be less than 0",
+        "ageMax": "Age cannot be greater than 120",
+        "ageInteger": "Age must be an integer",
+        "locationMax": "Maximum 200 characters",
+        "titleRequired": "The 'Title of story' field is required",
+        "titleMin": "Minimum 3 characters",
+        "titleMax": "Maximum 100 characters",
+        "commentMax": "Maximum 2000 characters",
+        "consentRequired": "Consent is required",
+        "categoryRequired": "Category is required"
+      },
+      "success": "has been planted and is blooming in the garden!",
+      "error": "Failed to plant flower. Please try again.",
+      "submit": "Plant new memory flower",
+      "loading": "Adding your story..."
+    }
+  },
+  "candles": {
+    "hero": {
+      "title": "Memory candles",
+      "subtitle": "Honor someone's memory with a symbolic digital candle. Add their name, a date, or a message – and help keep their light alive.",
+      "findCandle": "Find some memory candle",
+      "lightCandle": "Light new memory candle"
+    },
+    "candleForm": {
+      "title": "New candle",
+      "name": "Name or Callsign",
+      "dateOfBirth": "Date of Birth",
+      "dateOfDeath": "Date of Death",
+      "comment": "Comment or story",
+      "audio": "Audio",
+      "photo": "Photo",
+      "video": "Video",
+      "consent": "I consent to the processing of my personal data and public sharing of my submission",
+      "candleId": "Candle ID",
+      "validation": {
+        "nameMax": "Maximum 100 characters",
+        "dateOfBirthRequired": "Date of birth is required",
+        "dateOfDeathRequired": "Date of death is required",
+        "commentMax": "Maximum 2000 characters",
+        "consentRequired": "Consent is required"
+      },
+      "success": "has been lit and added to our memorial!",
+      "error": "Failed to light candle. Please try again.",
+      "submit": "Light new memory candle",
+      "loading": "Adding your story..."
+    }
+  },
+  "archives": {
+    "hero": {
+      "title": "Memory Archives",
+      "subtitle": "Preserve and explore important stories, documents, and memories from our community.",
+      "findStory": "Find story in archive",
+      "addStory": "Add story to archive"
+    },
+    "book": {
+      "title": "Archive",
+      "noStories": "No stories found for your query"
+    },
+    "addStory": {
+      "name": "Name or Callsign",
+      "age": "Age",
+      "location": "Location",
+      "storyTitle": "Title of story",
+      "category": "Category of story",
+      "comment": "Comment or story",
+      "consent": "I consent to the processing of my personal data and public sharing of my submission",
+      "sensitive": "This message may contain sensitive content",
+      "storyId": "Story ID",
+      "validation": {
+        "nameMax": "Maximum 100 characters",
+        "ageMin": "Age cannot be less than 0",
+        "ageMax": "Age cannot be greater than 120",
+        "ageInteger": "Age must be an integer",
+        "locationMax": "Maximum 200 characters",
+        "titleRequired": "The 'Title of story' field is required",
+        "titleMin": "Minimum 3 characters",
+        "titleMax": "Maximum 100 characters",
+        "categoryRequired": "Category is required",
+        "commentMax": "Maximum 2000 characters",
+        "consentRequired": "Consent is required"
+      },
+      "success": "Story has been added to archives!",
+      "error": "Failed to add story. Please try again.",
+      "loading": "Adding your story...",
+      "submit": "Add story to archive"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Memory Gallery",
+      "subtitle": "Explore visual and audio memories shared by our community.",
+      "filters": {
+        "photo": "Photos",
+        "video": "Videos",
+        "audio": "Audio"
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "filters": {
+        "all": "All Categories",
+        "mediaType": "Media Type"
+      },
+      "noMedia": "No {{mediaType}} found",
+      "loadMore": "Load More"
+    },
+    "addStory": {
+      "title": "Add story to gallery",
+      "name": "Name or Callsign",
+      "age": "Age",
+      "location": "Location",
+      "storyTitle": "Title of story",
+      "category": "Category",
+      "comment": "Comment or story",
+      "audio": "Audio",
+      "photo": "Photo",
+      "video": "Video",
+      "consent": "I consent to the processing of my personal data and public sharing of my submission",
+      "sensitive": "This message may contain sensitive content",
+      "storyId": "Story ID",
+      "validation": {
+        "nameMax": "Maximum 100 characters",
+        "ageMin": "Age cannot be less than 0",
+        "ageMax": "Age cannot be greater than 120",
+        "ageInteger": "Age must be an integer",
+        "locationMax": "Maximum 200 characters",
+        "titleRequired": "The 'Title of story' field is required",
+        "titleMin": "Minimum 3 characters",
+        "titleMax": "Maximum 100 characters",
+        "categoryRequired": "Category is required",
+        "commentMax": "Maximum 2000 characters",
+        "consentRequired": "Consent is required",
+        "mediaRequired": "At least one media file (audio, photo, or video) is required for gallery"
+      },
+      "success": "Story has been added to gallery!",
+      "error": "Failed to add story. Please try again.",
+      "loading": "Adding your story...",
+      "submit": "Add story to gallery"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About us",
+      "bigTitle": "Why is this important?"
+    },
+    "statistics": {
+      "title": "Our Impact",
+      "memoriesPreserved": "Memories Preserved",
+      "communitiesConnected": "Communities Connected",
+      "countriesReached": "Countries Reached",
+      "refugeesInEurope": "Refugees in Europe"
+    },
+    "reviews": {
+      "title": "What People Say",
+      "subtitle": "Hear from our community members",
+      "button": "Take one review"
+    },
+    "information": {
+      "title": "Interview",
+      "subtitle": "In this video interview with Professor Rachel Granger, we discuss the role of digital platforms in preserving personal and collective wartime memory. The conversation explores how interactive design, storytelling, and emotion come together to support remembrance, resilience, and cultural heritage. We explore why platforms like The Digital Memory Garden matter - for healing, connection, and history - and how they help keep memory alive in times of war and displacement.",
+      "proffessorJob": "Professor of Creative Development and Social Sciences",
+      "proffessorUniversity": "De Montfort University, Leicester"
+    },
+    "manifest": {
+      "title": "Our Values",
+      "subtitle": "What drives us forward"
+    },
+    "author": {
+      "name": "Lana Sokoliuk",
+      "title": "About the Creator",
+      "subtitle": "The person behind Digital Memory Garden",
+      "descriptionTitle": "About the Author and Project",
+      "description": "Lana Sokoliuk is the creator of The Digital Memory Garden and a student of the Digital Media Design Master's programme at the University of Edinburgh. Her creative and academic work is driven by a deep interest in preserving collective memory, symbolic forms of storytelling, and designing emotionally intelligent, interactive platforms. This project was born from the belief that memory should not disappear in silence — it should be nurtured, shared, and held with care. The Digital Memory Garden is her way of transforming grief and remembrance into a participatory digital space.",
+      "quote": "Some memories are too fragile to be shouted, but too important to be lost. This space was built to hold them gently - to give people a way to speak without fear, to remember without noise, and to let stories grow quietly where they won’t be forgotten."
+    }
+  },
+  "donate": {
+    "hero": {
+      "title": "Donate",
+      "subtitle": "Donation Initiatives for Ukraine"
+    },
+    "initiatives": [
+      "Support Army Needs",
+      "For  Defense, Medicine & Rebuild",
+      "Help Vulnerable Children"
+    ],
+    "information": {
+      "title": "Where Your Donation Goes",
+      "subtitle": "In times of war, every small act of solidarity matters. That’s why we’ve carefully selected three of the most trusted and transparent funds supporting Ukraineeach focused on a different area: frontline defense, humanitarian recovery, and protection of children. Whether you feel moved to help equip those defending their homes, support medical and reconstruction efforts, or ensure safety for displaced families, your contribution will go directly to where it’s needed most.",
+      "funds": [
+        "Come Back Alive Foundation is one of the oldest and most respected Ukrainian charitable foundations supporting the military. Established in 2014, it provides non-lethal aid to Ukraine’s defenders - such as drones, thermal imaging, communication systems, and tactical training. Known for operating directly on the ground and publishing transparent financial reports, the foundation has gained both national and international trust.",
+        "UNITED24 is the official fundraising platform launched by the President of Ukraine. All donations are processed through the National Bank of Ukraine and go directly toward defense, medical aid, humanitarian demining, education, and infrastructure recovery. The platform provides clear weekly reports, and donors can choose specific areas to support, making it a reliable and well-governed mechanism for large-scale impact.",
+        "Emergency Appeal focuses on helping Ukrainian children and families affected by war. As a part of the United Nations, UNICEF operates across Ukraine and neighboring countries to deliver safe water, emergency shelter, healthcare, schooling materials, and emotional support. It is one of the most reputable global organizations ensuring the well-being of the most vulnerable population - children."
+      ]
+    }
+  },
+  "search": {
+    "placeholder": "Search for memories...",
+    "noResults": "No results found for your query.",
+    "error": "Search failed. Please try again.",
+    "suggestions": "Suggestions"
+  },
+  "storyDetails": {
+    "category": "Category",
+    "number": "Number",
+    "dateOfBirth": "Born",
+    "dateOfDeath": "Died",
+    "author": "By: ",
+    "age": "Age",
+    "location": "Location",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "mediaUpload": {
+    "audioAdded": "Audio Added",
+    "photoAdded": "Photo Added",
+    "videoAdded": "Video Added",
+    "audio": "Audio",
+    "photo": "Photo",
+    "video": "Video"
+  },
+  "language": {
+    "en": "English",
+    "uk": "Українська"
+  }
+}

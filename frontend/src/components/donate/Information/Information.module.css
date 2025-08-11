@@ -1,0 +1,146 @@
+.container {
+  padding: 40px 150px 60px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.description {
+  width: 100%;
+  padding: 40px 36px;
+  background-color: rgba(188, 198, 210, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  line-height: 122%;
+  letter-spacing: 0%;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+  height: 220px;
+  width: 100%;
+}
+.optionImage {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid rgba(15, 26, 44, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.optionContent {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.optionTitle {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.optionText {
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 40px 72px 60px 72px;
+  }
+  .content {
+    gap: 40px;
+  }
+  .optionTitle {
+    font-size: 24px;
+  }
+  .optionText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .option {
+    gap: 30px;
+  }
+  .optionTitle {
+    font-size: 22px;
+  }
+  .optionText {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .option {
+    height: 250px;
+  }
+  .optionImage {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .description {
+    padding: 24px 20px;
+  }
+  .option {
+    flex-direction: column;
+    height: auto;
+  }
+  .optionContent {
+    width: 100%;
+    gap: 20px;
+  }
+  .optionTitle {
+    font-size: 24px;
+  }
+  .optionText {
+    font-size: 18px;
+  }
+  .optionImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .description {
+    font-size: 14px;
+  }
+  .optionImage {
+    height: 260px;
+  }
+  .optionTitle {
+    font-size: 20px;
+  }
+  .optionText {
+    font-size: 14px;
+  }
+}

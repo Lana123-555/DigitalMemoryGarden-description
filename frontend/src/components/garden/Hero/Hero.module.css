@@ -1,0 +1,203 @@
+.hero {
+  padding: 16px 72px 60px 72px;
+  height: 100vh;
+  position: relative;
+}
+.blueContainer {
+  width: 100%;
+  height: calc(100vw / 5.88);
+  background-image: url("/blue-mask-bg.png");
+  background-size: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px calc(72px * 3);
+}
+.heroContent {
+  margin-top: 20vh;
+}
+.btnsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.storyDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+.storyName {
+  font-size: 32px;
+  color: rgba(207, 206, 201, 1);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.storyAuthor {
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(245, 217, 170, 1);
+}
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.actionButton {
+  width: 82px;
+  height: 82px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid rgba(207, 206, 201, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.actionIcon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+.flower {
+  position: absolute;
+  width: 25%;
+  max-height: 75vh;
+  object-fit: contain;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media screen and (min-width: 1441px) {
+  .storyName {
+    font-size: 36px;
+  }
+  .storyAuthor {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .blueContainer {
+    padding-top: 40px;
+  }
+  .actionButton {
+    width: 72px;
+    height: 72px;
+  }
+  .actionIcon {
+    width: 28px;
+    height: 28px;
+  }
+  .storyName,
+  .storyAuthor {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 16px 40px 60px 40px;
+  }
+  .flower {
+    bottom: 10px;
+  }
+  .heroContent {
+    margin-top: 10vh;
+  }
+  .blueContainer {
+    align-items: end;
+    justify-content: space-between;
+    padding: 20px 40px;
+    padding-bottom: 10px;
+  }
+  .actionButton {
+    width: 60px;
+    height: 60px;
+  }
+  .actionIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .flower {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .storyName,
+  .storyAuthor {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1024px) {
+  .flower {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 16px 20px 60px 20px;
+  }
+  .heroContent {
+    margin-top: 5vh;
+  }
+  .btnsWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .blueContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 32px;
+    padding: 20px 0;
+    height: 28vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .flower {
+    bottom: 20vh;
+    height: 35vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .flower {
+    height: 40vh;
+    bottom: 22vh;
+  }
+}
+
+/* @media screen and (max-width: 560px) and (max-height: 800px) {
+  .flower {
+    height: 25vh;
+    bottom: 25vh;
+  }
+  .blueContainer {
+    height: 30vh;
+    gap: 15px;
+  }
+} */
+
+@media screen and (max-width: 375px) {
+  .flower {
+    height: 35vh;
+  }
+}

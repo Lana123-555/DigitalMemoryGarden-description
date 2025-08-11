@@ -1,0 +1,21 @@
+.plantWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 72px 40px 72px;
+  height: 800px;
+}
+
+@media screen and (max-width: 1024px) {
+  .plantWrapper {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plantWrapper {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  min-height: 100vh;
+  background-image: url("/bg.webp");
+  background-attachment: fixed;
+}
+.candlesContainer {
+  background: rgba(26, 44, 67, 1);
+}

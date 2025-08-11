@@ -1,0 +1,242 @@
+.container {
+  background-image: url("/blue-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+  padding: 40px 72px 40px 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+}
+
+.mapContainer,
+.mapContainerMobile {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 112/73;
+}
+.mapContainerMobile {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+
+.mapImageAbsolute {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.flowerMarker {
+  position: absolute;
+  transition: box-shadow 0.2s;
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: left, top, width, height;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 0 auto;
+  max-width: 400px;
+}
+.title,
+.titleMobile {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(207, 206, 201, 1);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.itemIcon {
+  width: 33px;
+  height: 35px;
+  object-fit: contain;
+}
+.itemText {
+  font-size: 20px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(207, 206, 201, 1);
+}
+.btnsWrapper {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  margin-top: 40px;
+}
+.mapImage {
+  height: 100%;
+  max-width: 70%;
+  object-fit: contain;
+}
+.titleMobile,
+.mapContainerMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1650px) {
+  .mapContainer {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mapContainer {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 650px;
+  }
+  .mapContainer {
+    height: 60%;
+  }
+  .content {
+    max-width: 350px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .mapImage {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+    height: 600px;
+  }
+  .content {
+    max-width: 300px;
+  }
+  .mapImage {
+    max-width: 65%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .itemText {
+    font-size: 18px;
+  }
+  .itemIcon {
+    width: 28px;
+    height: 30px;
+  }
+
+  .btnsWrapper {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    height: 550px;
+  }
+  .mapContainer {
+    height: 55%;
+  }
+  .listItem {
+    gap: 20px;
+  }
+  .itemText {
+    font-size: 16px;
+  }
+  .mapImage {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    align-items: center;
+    max-width: 100%;
+  }
+  .list,
+  .btnsWrapper {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .listItem {
+    gap: 30px;
+  }
+  .itemText {
+    font-size: 18px;
+  }
+  .itemIcon {
+    width: 30px;
+    height: 32px;
+  }
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .title,
+  .mapImage {
+    display: none;
+  }
+  .titleMobile {
+    display: block;
+  }
+  .mapContainerMobile {
+    display: block;
+  }
+  .titleMobile {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .titleMobile {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .listItem {
+    gap: 20px;
+  }
+  .itemText {
+    font-size: 16px;
+  }
+  .btnsWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

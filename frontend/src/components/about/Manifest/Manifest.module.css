@@ -1,0 +1,144 @@
+.container {
+  padding: 40px 72px;
+  display: flex;
+  gap: 24px;
+}
+.page {
+  background-color: rgba(207, 206, 201, 1);
+  border: 1px solid rgba(15, 26, 44, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 50%;
+}
+.title {
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.text {
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0%;
+  text-align: justify;
+  z-index: 2;
+  position: relative;
+}
+.sectionTitle {
+  font-weight: 600;
+}
+.list {
+  list-style-type: disc;
+  padding-left: 32px;
+}
+.imagesWrapper {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+}
+.image {
+  width: calc(50% - 12px);
+  height: 100%;
+  background-color: rgba(188, 198, 210, 1);
+  border: 1px solid rgba(15, 26, 44, 1);
+  border-radius: 20px;
+  height: 140px;
+  object-fit: cover;
+}
+.patternLeft,
+.patternRight {
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  opacity: 0.5;
+  max-height: 80%;
+  object-fit: contain;
+  object-position: right bottom;
+}
+.patternLeft {
+  left: 20px;
+  top: 20px;
+  transform: rotate(180deg);
+}
+.patternRight {
+  right: 20px;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .text {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page {
+    padding: 40px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+  .page {
+    padding: 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 40px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .page {
+    padding: 20px;
+    width: 100%;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .image {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .image {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 20px;
+  }
+  .imagesWrapper {
+    gap: 16px;
+  }
+  .image {
+    height: 90px;
+  }
+  .page {
+    gap: 16px;
+  }
+}

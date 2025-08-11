@@ -1,0 +1,268 @@
+.hero {
+  padding: 135px 72px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.heroContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1024px;
+  position: relative;
+  z-index: 1;
+}
+.title {
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.title span {
+  margin-left: 55px;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.btnsWrapper {
+  display: flex;
+  gap: 17px;
+  margin-top: 40px;
+}
+
+.flowerWrapper {
+  height: 100%;
+  width: 850px;
+  position: absolute;
+  right: -12%;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flowerImage {
+  position: absolute;
+  width: 100%;
+  animation: rotateFlower 60s linear infinite;
+}
+.flowerText {
+  position: absolute;
+  width: 50%;
+  animation: rotateText 60s linear infinite;
+}
+.flowerPlayButton {
+  position: absolute;
+  width: 85px;
+  padding-left: 2%;
+}
+
+.btnMobile {
+  display: none;
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .title {
+    font-size: 94px;
+  }
+  .subtitle {
+    font-size: 17px;
+  }
+  .flowerWrapper {
+    width: 650px;
+  }
+  .flowerPlayButton {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .heroContent {
+    max-width: 900px;
+  }
+  .title {
+    font-size: 88px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .flowerWrapper {
+    width: 550px;
+  }
+  .flowerPlayButton {
+    width: 65px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .heroContent {
+    max-width: 790px;
+  }
+  .title {
+    font-size: 76px;
+  }
+  .flowerWrapper {
+    width: 500px;
+  }
+  .flowerPlayButton {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heroContent {
+    max-width: 680px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .flowerWrapper {
+    width: 430px;
+  }
+  .flowerPlayButton {
+    width: 48px;
+  }
+  .arrowIcon {
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .hero {
+    padding: 40px;
+    padding-bottom: 0;
+  }
+  .heroContent {
+    max-width: 600px;
+    gap: 30px;
+  }
+  .title {
+    font-size: 56px;
+  }
+  .flowerWrapper {
+    width: 350px;
+  }
+  .flowerPlayButton {
+    width: 40px;
+  }
+  .btnsWrapper {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heroContent {
+    max-width: 520px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .flowerWrapper {
+    width: 330px;
+  }
+  .flowerPlayButton {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 110px 30px;
+    padding-bottom: 40px;
+  }
+  .heroContent {
+    max-width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .title span {
+    margin-left: 30px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .flowerWrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+  }
+  .flowerPlayButton {
+    width: 7.5%;
+  }
+  .flowerImage {
+    height: 100%;
+    object-fit: contain;
+  }
+  .flowerText {
+    height: 50%;
+    object-fit: contain;
+  }
+  .btnsWrapper {
+    display: none;
+  }
+  .btnMobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero {
+    padding: 100px 20px;
+    padding-bottom: 40px;
+  }
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .title span {
+    margin-left: 0;
+  }
+  .subtitle {
+    display: none;
+  }
+  .flowerWrapper {
+    width: 130%;
+    height: 100%;
+  }
+  .flowerPlayButton {
+    width: 11%;
+  }
+}

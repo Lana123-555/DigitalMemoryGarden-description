@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.langButton {
+  padding: 4px 8px;
+  border: 1px solid #bcc6d2;
+  border-radius: 4px;
+  background: transparent;
+  color: #bcc6d2;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.langButton:hover {
+  background: rgba(188, 198, 210, 0.1);
+}
+
+.langButton.active {
+  background: #bcc6d2;
+  color: #0f1a2c;
+}
+
+/* Light mode for candles and about pages */
+.container.light .langButton {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.container.light .langButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container.light .langButton.active {
+  background: #ffffff;
+  color: #0f1a2c;
+}
