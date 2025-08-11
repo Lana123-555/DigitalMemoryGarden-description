@@ -586,7 +586,7 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 1. **Clone Repository:**
    ```bash
-   git clone https://github.com/TimohaVysochynskyi/DigitalMemoryGarden.git
+   git clone
    cd DigitalMemoryGarden
    ```
 
